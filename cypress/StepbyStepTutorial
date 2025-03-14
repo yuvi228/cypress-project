@@ -1,0 +1,37 @@
+Create one folder for project, here cypress-project
+mkdir cypress-project
+
+Open terminal and change to this directory - 
+cd cypress-project
+
+Initialize package.json (Required for Cypress)
+npm init -y
+This creates a package.json file, which tracks dependencies.
+
+Install Cypress
+npm install cypress --save-dev
+This installs Cypress locally in node_modules/.
+
+Open Cypress for the First Time
+npx cypress open
+This automatically creates the Cypress folder structure (cypress/) inside your project.
+
+Folder Structure Created Automatically
+After running Cypress for the first time, your project will have:
+cypress-project/
+│── node_modules/    
+│── cypress/  
+│   ├── downloads/   
+│   ├── e2e/         # Cypress test files go here  
+│   ├── fixtures/    # Stores mock data (JSON, images, etc.)  
+│   ├── support/     # Custom commands and utilities  
+│── cypress.config.js # Cypress config file  
+│── package.json     
+│── package-lock.json 
+
+Create a Sample Test
+Inside cypress/e2e/, create a test file:
+firstTest.cy.js
+
+Now, run it using:
+npx cypress open
