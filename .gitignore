@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+package-lock.json
+
+# Cypress-related files
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# Cypress config cache
+.cypress_cache/
+
+# Environment files (if any)
+.env
+cypress.env.json
+
+# IDE-specific files (if using VS Code)
+.vscode/
+.DS_Store
